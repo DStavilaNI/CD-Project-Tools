@@ -38,6 +38,7 @@
 			</Item>
 			<Item Name="Copy .LLB to NI VeriStand dir.vi" Type="VI" URL="../Utility/Copy .LLB to NI VeriStand dir.vi"/>
 			<Item Name="Project Build Tools.vi" Type="VI" URL="../Utility/Project Build Tools.vi"/>
+			<Item Name="Project Sync Tools.vi" Type="VI" URL="../Utility/Project Sync Tools.vi"/>
 		</Item>
 		<Item Name="TimingDRV Engine.lvlib" Type="Library" URL="../Engine/Windows/TimingDRV Engine.lvlib"/>
 		<Item Name="TimingDRV Shared.lvlib" Type="Library" URL="../Shared/TimingDRV Shared.lvlib"/>
