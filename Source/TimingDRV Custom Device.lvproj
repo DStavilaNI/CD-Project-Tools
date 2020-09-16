@@ -630,7 +630,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{70E80323-1C7D-4096-BB63-3C2427049A60}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/TimingDRV Engine.lvlib/Engine/Run/RT Driver VI.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/TimingDRV Engine.lvlib/Engine/RT Driver VI.vi</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
 			</Item>
@@ -653,7 +653,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{B307EE71-D09E-4539-BF43-B76F96EF5D71}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/TimingDRV Engine.lvlib/Engine/Run/RT Driver VI.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/TimingDRV Engine.lvlib/Engine/RT Driver VI.vi</Property>
 				<Property Name="Source[1].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[1].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -767,7 +767,7 @@
 			<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
 			<Item Name="Custom Device Utility Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/Custom Device Tools/Custom Device Utility Library/Custom Device Utility Library.lvlib"/>
 		</Item>
-		<Item Name="TimingDRV Engine.lvlib" Type="Library" URL="../Engine/Windows/TimingDRV Engine.lvlib"/>
+		<Item Name="TimingDRV Engine.lvlib" Type="Library" URL="../Engine/RT PXI Target/TimingDRV Engine.lvlib"/>
 		<Item Name="TimingDRV Shared.lvlib" Type="Library" URL="../Shared/TimingDRV Shared.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -929,9 +929,7 @@
 				<Property Name="Source[3].properties[4].value" Type="Bool">false</Property>
 				<Property Name="Source[3].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[3].type" Type="Str">Container</Property>
-				<Property Name="Source[4].properties[0].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[4].properties[0].value" Type="Bool">true</Property>
-				<Property Name="SourceCount" Type="Int">5</Property>
+				<Property Name="SourceCount" Type="Int">4</Property>
 			</Item>
 		</Item>
 	</Item>
@@ -1021,7 +1019,7 @@ DirectoryIndex index.htm
 			<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
 			<Item Name="Custom Device Utility Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/Custom Device Tools/Custom Device Utility Library/Custom Device Utility Library.lvlib"/>
 		</Item>
-		<Item Name="TimingDRV Engine.lvlib" Type="Library" URL="../Engine/Windows/TimingDRV Engine.lvlib"/>
+		<Item Name="TimingDRV Engine.lvlib" Type="Library" URL="../Engine/RT CompactRIO Target/TimingDRV Engine.lvlib"/>
 		<Item Name="TimingDRV Shared.lvlib" Type="Library" URL="../Shared/TimingDRV Shared.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -1240,7 +1238,7 @@ DirectoryIndex index.htm
 		<Item Name="NI VeriStand APIs" Type="Folder">
 			<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
 		</Item>
-		<Item Name="TimingDRV Engine.lvlib" Type="Library" URL="../Engine/Windows/TimingDRV Engine.lvlib"/>
+		<Item Name="TimingDRV Engine.lvlib" Type="Library" URL="../Engine/RT CompactRIO Target - Linux ARM/TimingDRV Engine.lvlib"/>
 		<Item Name="TimingDRV Shared.lvlib" Type="Library" URL="../Shared/TimingDRV Shared.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -1403,9 +1401,7 @@ DirectoryIndex index.htm
 				<Property Name="Source[3].properties[4].value" Type="Bool">false</Property>
 				<Property Name="Source[3].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[3].type" Type="Str">Container</Property>
-				<Property Name="Source[4].properties[0].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[4].properties[0].value" Type="Bool">true</Property>
-				<Property Name="SourceCount" Type="Int">5</Property>
+				<Property Name="SourceCount" Type="Int">4</Property>
 			</Item>
 		</Item>
 	</Item>
@@ -1463,7 +1459,7 @@ DirectoryIndex index.htm
 		<Item Name="NI VeriStand APIs" Type="Folder">
 			<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
 		</Item>
-		<Item Name="TimingDRV Engine.lvlib" Type="Library" URL="../Engine/Windows/TimingDRV Engine.lvlib"/>
+		<Item Name="TimingDRV Engine.lvlib" Type="Library" URL="../Engine/RT CompactRIO Target - Linux x64/TimingDRV Engine.lvlib"/>
 		<Item Name="TimingDRV Shared.lvlib" Type="Library" URL="../Shared/TimingDRV Shared.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -1626,9 +1622,7 @@ DirectoryIndex index.htm
 				<Property Name="Source[3].properties[4].value" Type="Bool">false</Property>
 				<Property Name="Source[3].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[3].type" Type="Str">Container</Property>
-				<Property Name="Source[4].properties[0].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[4].properties[0].value" Type="Bool">true</Property>
-				<Property Name="SourceCount" Type="Int">5</Property>
+				<Property Name="SourceCount" Type="Int">4</Property>
 			</Item>
 		</Item>
 	</Item>

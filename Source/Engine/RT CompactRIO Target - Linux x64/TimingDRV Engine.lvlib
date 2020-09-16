@@ -8,19 +8,14 @@
 
 </Property>
 	<Item Name="Engine" Type="Folder">
-		<Item Name="Async Processes" Type="Folder">
-			<Item Name="Input Process.lvclass" Type="LVClass" URL="../Processes/Input Process/Input Process.lvclass"/>
-			<Item Name="Output Process.lvclass" Type="LVClass" URL="../Processes/Ouput Process/Output Process.lvclass"/>
-		</Item>
 		<Item Name="Init" Type="Folder">
 			<Item Name="Timing Source Initialization.vi" Type="VI" URL="../Timing Source Initialization.vi"/>
 		</Item>
-		<Item Name="Parent Classes" Type="Folder">
-			<Item Name="CD_Process" Type="Folder">
-				<Item Name="CD_Process.lvclass" Type="LVClass" URL="../Parent Classes/CD_Process/CD_Process.lvclass"/>
-			</Item>
+		<Item Name="Run" Type="Folder">
+			<Item Name="RT Driver VI.vi" Type="VI" URL="../RT Driver VI.vi"/>
 		</Item>
-		<Item Name="RT Driver VI.vi" Type="VI" URL="../RT Driver VI.vi"/>
+		<Item Name="Shut Down" Type="Folder"/>
+		<Item Name="CD_Process.lvclass" Type="LVClass" URL="../Parent Classes/CD_Process/CD_Process.lvclass"/>
 	</Item>
 	<Item Name="Types" Type="Folder"/>
 </Library>
