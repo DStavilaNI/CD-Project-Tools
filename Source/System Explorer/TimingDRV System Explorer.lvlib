@@ -23,6 +23,8 @@
 			<Item Name="Initialization VI.vi" Type="VI" URL="../Initialization VI.vi"/>
 		</Item>
 		<Item Name="SubVIs" Type="Folder"/>
-		<Item Name="Types" Type="Folder"/>
+		<Item Name="TypeDefs" Type="Folder">
+			<Item Name="Generator Types.ctl" Type="VI" URL="../TypeDefs/Generator Types.ctl"/>
+		</Item>
 	</Item>
 </Library>
