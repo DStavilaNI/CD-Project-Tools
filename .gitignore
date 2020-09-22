@@ -1,1 +1,5 @@
-Built/
+Built/*
+Source/Engine/RT CompactRIO Target/*
+Source/Engine/RT CompactRIO Target - Linux ARM/*
+Source/Engine/RT CompactRIO Target - Linux x64/*
+Source/Engine/RT PXI Target/*

@@ -8,17 +8,24 @@
 
 </Property>
 	<Item Name="Engine" Type="Folder">
-		<Item Name="Async Processes" Type="Folder">
-			<Item Name="Input Process.lvclass" Type="LVClass" URL="../Processes/Input Process/Input Process.lvclass"/>
-			<Item Name="Output Process.lvclass" Type="LVClass" URL="../Processes/Ouput Process/Output Process.lvclass"/>
+		<Property Name="NI.SortType" Type="Int">3</Property>
+		<Item Name="Parent Classes" Type="Folder">
+			<Item Name="Process" Type="Folder">
+				<Item Name="Process.lvclass" Type="LVClass" URL="../Parent Classes/Process/Process.lvclass"/>
+			</Item>
 		</Item>
 		<Item Name="Init" Type="Folder">
 			<Item Name="Timing Source Initialization.vi" Type="VI" URL="../Timing Source Initialization.vi"/>
 		</Item>
-		<Item Name="Parent Classes" Type="Folder">
-			<Item Name="CD_Process" Type="Folder">
-				<Item Name="CD_Process.lvclass" Type="LVClass" URL="../Parent Classes/CD_Process/CD_Process.lvclass"/>
-			</Item>
+		<Item Name="Assembler" Type="Folder">
+			<Item Name="Assembler.lvclass" Type="LVClass" URL="../Assembler/Assembler.lvclass"/>
+		</Item>
+		<Item Name="Async Processes" Type="Folder">
+			<Item Name="Input Process.lvclass" Type="LVClass" URL="../Processes/Input Process/Input Process.lvclass"/>
+			<Item Name="Output Process.lvclass" Type="LVClass" URL="../Processes/Ouput Process/Output Process.lvclass"/>
+		</Item>
+		<Item Name="Tester" Type="Folder">
+			<Item Name="Tester.vi" Type="VI" URL="../Tester/Tester.vi"/>
 		</Item>
 		<Item Name="RT Driver VI.vi" Type="VI" URL="../RT Driver VI.vi"/>
 	</Item>

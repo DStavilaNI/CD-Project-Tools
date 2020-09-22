@@ -146,17 +146,17 @@
     
 <Page>
       <Name>
-        <eng>Page1</eng>
-        <loc>Page1</loc>
+        <eng>AO</eng>
+        <loc>AO</loc>
       </Name>
-      <GUID>3860665a-22b8-40fc-8684-1b9a4fb808e7</GUID>
+      <GUID>0b83ef27-0fd3-4245-a651-6f77db6db129</GUID>
       <Glyph>
 			<Type>To Application Data Dir</Type>
-			<Path>System Explorer\Glyphs\default fpga category.png</Path>
+			<Path>System Explorer\Glyphs\NI-XNET Signal.png</Path>
 		</Glyph>
       <Item2Launch>
         <Type>To Common Doc Dir</Type>
-		<Path>Timing and Sync\TimingDRV\TimingDRV Configuration.llb\Page1.vi</Path>
+		<Path>Timing and Sync\TimingDRV\TimingDRV Configuration.llb\AO.vi</Path>
       </Item2Launch>
     </Page>
 <Page>
