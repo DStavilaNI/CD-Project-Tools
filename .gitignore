@@ -3,3 +3,5 @@ Source/Engine/RT CompactRIO Target/*
 Source/Engine/RT CompactRIO Target - Linux ARM/*
 Source/Engine/RT CompactRIO Target - Linux x64/*
 Source/Engine/RT PXI Target/*
+Source/TimingDRV Custom Device.aliases
+Source/TimingDRV Custom Device.lvlps
