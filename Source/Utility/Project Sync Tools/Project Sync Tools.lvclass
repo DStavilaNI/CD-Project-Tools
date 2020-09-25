@@ -224,7 +224,7 @@
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 				<Property Name="NI.ClassItem.State" Type="Int">1342710290</Property>
 			</Item>
-			<Item Name="Update BuildSpecs.vi" Type="VI" URL="../Methods/Update BuildSpecs.vi">
+			<Item Name="Update BuildSpec.vi" Type="VI" URL="../Methods/Update BuildSpec.vi">
 				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">'1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!(_!!!!$Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$J!=!!?!!!='F"S&lt;WJF9X1A5XFO9S"5&lt;W^M=SZM&gt;G.M98.T!!!31U1A1H6J&lt;'1A6'^P&lt;(-A&lt;X6U!!!91$$`````$F.P&gt;8*D:3"-;7*S98*Z!!!71$$`````$6.P&gt;8*D:3"'&lt;WRE:8)!&amp;%!B$U&amp;Q='RZ)%FO9WRV=WFP&lt;A")!0%!!!!!!!!!!BJ1=G^K:7.U)&amp;.Z&lt;G-A6'^P&lt;(-O&lt;(:D&lt;'&amp;T=R2#&gt;7FM:&amp;.Q:7-A5W^V=G.F,G.U&lt;!!1!&amp;!!!Q!'!!=!#!!?1%!!!@````]!#2&amp;#&gt;7FM:&amp;.Q:7-A5W^V=G.F=Q!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!"J!-0````]26'&amp;S:W6U)%*V;7RE)&amp;.Q:7-!/%"Q!"Y!!"Q;5(*P;G6D&gt;#"4?7ZD)&amp;2P&lt;WRT,GRW9WRB=X-!!"&amp;$2#"#&gt;7FM:#"5&lt;W^M=S"J&lt;A"B!0!!$!!$!!1!"!!&amp;!!1!"!!%!!I!#Q!%!!Q!$1-!!(A!!!U)!!!!!!!!!!!!!!U,!!!!!!!!!!!!!!!!!!)1!!!!#A!!!!!!!!)1!!!!#A!!$1!!!!Q!!!!!!!!!!!!!!1!/!!!!!!</Property>
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 				<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
@@ -299,6 +299,15 @@
 				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 				<Property Name="NI.ClassItem.State" Type="Int">1342972432</Property>
+			</Item>
+			<Item Name="Add Folder to Targets.vi" Type="VI" URL="../Methods/Add Folder to Targets.vi">
+				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">'1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'S!!!!$A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$Z!=!!?!!!='F"S&lt;WJF9X1A5XFO9S"5&lt;W^M=SZM&gt;G.M98.T!!!75(*P;G6D&gt;#"4?7ZD)&amp;2P&lt;WRT)'^V&gt;!!!&amp;%!Q`````QN'&lt;WRE:8)A4G&amp;N:1!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!":!-P````]-4'FC=G&amp;S?3"1982I!!!;1%!!!@````]!#!V$&lt;WZU:7ZU)&amp;"B&gt;'BT!""!-0````]'5X2S;7ZH!!!;1%!!!@````]!#AR598*H:81A4G&amp;N:8-!!$R!=!!?!!!='F"S&lt;WJF9X1A5XFO9S"5&lt;W^M=SZM&gt;G.M98.T!!!65(*P;G6D&gt;#"4?7ZD)&amp;2P&lt;WRT)'FO!'%!]!!-!!-!"!!%!!5!"!!%!!1!"A!(!!E!#Q!-!Q!!?!!!$1A!!!!!!!!!!!!!$1M!!!!!!!!!!!!!!!!!!B!!!!!+!!!##!!!!B!!!!!1!!!.!!!!$!!!!!!!!!!!!!!"!!U!!!!!</Property>
+				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+				<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+				<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+				<Property Name="NI.ClassItem.State" Type="Int">1342710288</Property>
 			</Item>
 			<Item Name="Create Target Folders.vi" Type="VI" URL="../Methods/Create Target Folders.vi">
 				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">'1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'E!!!!$1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!":!-P````]-:'6M:82F:#"Q982I!!!A1%!!!@````]!"2*36#"598*H:82T)%:P&lt;'2F=H-!!$Z!=!!?!!!='F"S&lt;WJF9X1A5XFO9S"5&lt;W^M=SZM&gt;G.M98.T!!!75(*P;G6D&gt;#"4?7ZD)&amp;2P&lt;WRT)'^V&gt;!!!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1!/1$$`````"%ZB&lt;75!!"R!1!!"`````Q!*$V2B=G&gt;F&gt;#"/97VF=S"J&lt;A!]1(!!(A!!("J1=G^K:7.U)&amp;.Z&lt;G-A6'^P&lt;(-O&lt;(:D&lt;'&amp;T=Q!!&amp;6"S&lt;WJF9X1A5XFO9S"5&lt;W^M=S"J&lt;A"B!0!!$!!$!!1!"A!(!!1!"!!%!!1!#!!%!!I!#Q-!!(A!!!U)!!!!!!!!#1!!!!U,!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!!!!!)+!!!!#A!!$1!!!!Q!!!!!!!!!!!!!!1!-!!!!!!</Property>
