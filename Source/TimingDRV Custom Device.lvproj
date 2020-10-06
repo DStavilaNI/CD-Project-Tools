@@ -43,7 +43,6 @@
 				<Item Name="Project XML Editor.lvclass" Type="LVClass" URL="../Utility/Project XML Editor/Project XML Editor.lvclass"/>
 			</Item>
 			<Item Name="Project Build Tools.vi" Type="VI" URL="../Utility/Project Build Tools.vi"/>
-			<Item Name="Project Sync Tools Mod.vi" Type="VI" URL="../Utility/Project Sync Tools Mod.vi"/>
 			<Item Name="Project Sync Tools.vi" Type="VI" URL="../Utility/Project Sync Tools.vi"/>
 		</Item>
 		<Item Name="TimingDRV Engine.lvlib" Type="Library" URL="../Engine/Windows/TimingDRV Engine.lvlib"/>

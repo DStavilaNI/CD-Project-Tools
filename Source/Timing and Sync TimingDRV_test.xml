@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<CustomDevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Custom Device.xsd">
+  <XSDVersion Build="0" Fix="0" Major="2010" Minor="0"/>
+  <AddMenu>
+    <eng>TimingDRV</eng>
+    <loc>TimingDRV</loc>
+  </AddMenu>
+  <Version>1.0.0</Version>
+  <Type>Asynchronous Timing and Sync</Type>
+  <MaxOccurrence>1</MaxOccurrence>
+  <MainPageGUID>bcaf5088-395a-4ad9-9122-12b389f961d4</MainPageGUID>
+  <TimingSource>
+    <HasTimingSourceCapability>true</HasTimingSourceCapability>
+ 
+	  <Paths PathsIsObsolete_UseSourceDistributionInstead="true">
+      <Source>
+        <Type>To Common Doc Dir</Type>
+        <Path>Timing and Sync\TimingDRV\Windows\TimingDRV Engine Windows.llb\Timing Source Initialization.vi</Path>
+      </Source>
+      <RealTimeSystemDestination>c:\ni-rt\NIVeriStand\Timing and Sync\TimingDRV\TimingDRV Engine Windows.llb\Timing Source Initialization.vi</RealTimeSystemDestination>
+    </Paths>
+ 
+    <SourceDistribution>
+	
+	    <Source>
+        <SupportedTarget>Windows</SupportedTarget>
+        <Location>
+          <Type>To Common Doc Dir</Type>
+          <Path>Timing and Sync\TimingDRV\Windows\TimingDRV Engine Windows.llb\Timing Source Initialization.vi</Path>
+        </Location>
+        <RealTimeSystemDestination>c:\ni-rt\NIVeriStand\Timing and Sync\TimingDRV\TimingDRV Engine Windows.llb\Timing Source Initialization.vi</RealTimeSystemDestination>
+      </Source>
+	  
+      <Source>
+        <SupportedTarget>Pharlap</SupportedTarget>
+        <Location>
+          <Type>To Common Doc Dir</Type>
+          <Path>Timing and Sync\TimingDRV\PharLap\TimingDRV Engine Pharlap.llb\Timing Source Initialization.vi</Path>
+        </Location>
+        <RealTimeSystemDestination>c:\ni-rt\NIVeriStand\Timing and Sync\TimingDRV\TimingDRV Engine Pharlap.llb\Timing Source Initialization.vi</RealTimeSystemDestination>
+      </Source>
+	  
+      <Source>
+        <SupportedTarget>VxWorks</SupportedTarget>
+        <Location>
+          <Type>To Common Doc Dir</Type>
+          <Path>Timing and Sync\TimingDRV\VxWorks\TimingDRV Engine VxWorks.llb\Timing Source Initialization.vi</Path>
+        </Location>
+        <RealTimeSystemDestination>c:\ni-rt\NIVeriStand\Timing and Sync\TimingDRV\TimingDRV Engine VxWorks.llb\Timing Source Initialization.vi</RealTimeSystemDestination>
+      </Source>
+	  
+      <Source>
+        <SupportedTarget>Linux_x64</SupportedTarget>
+        <Location>
+          <Type>To Common Doc Dir</Type>
+          <Path>Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine Linux64.llb\Timing Source Initialization.vi</Path>
+        </Location>
+        <RealTimeSystemDestination>c:\ni-rt\NIVeriStand\Timing and Sync\TimingDRV\TimingDRV Engine Linux64.llb\Timing Source Initialization.vi</RealTimeSystemDestination>
+      </Source>
+	  
+      <Source>
+        <SupportedTarget>Linux_32_ARM</SupportedTarget>
+        <Location>
+          <Type>To Common Doc Dir</Type>
+          <Path>Timing and Sync\TimingDRV\Linux_32_ARM\TimingDRV Engine LinuxARM.llb\Timing Source Initialization.vi</Path>
+        </Location>
+        <RealTimeSystemDestination>c:\ni-rt\NIVeriStand\Timing and Sync\TimingDRV\TimingDRV Engine LinuxARM.llb\Timing Source Initialization.vi</RealTimeSystemDestination>
+      </Source>
+	  
+    </SourceDistribution>
+ </TimingSource>
+  <InitializationVI>
+    <Type>Action</Type>
+    <Item2Launch>
+      <Type>To Common Doc Dir</Type>
+		    <Path>Timing and Sync\TimingDRV\TimingDRV Configuration.llb\Initialization VI.vi</Path>
+    </Item2Launch>
+  </InitializationVI>
+  <CustomDeviceVI>
+		  <SourceDistribution>
+			  <Source>
+				    <SupportedTarget>Windows</SupportedTarget>
+				    <Source>
+					    <Type>To Common Doc Dir</Type>
+					    <Path>Timing and Sync\TimingDRV\Windows\TimingDRV Engine Windows.llb\RT Driver VI.vi</Path>
+				</Source>
+				    <RealTimeSystemDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine Windows.llb\RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>
+			  <Source>
+				    <SupportedTarget>Pharlap</SupportedTarget>
+				    <Source>
+					    <Type>To Common Doc Dir</Type>
+					    <Path>Timing and Sync\TimingDRV\PharLap\TimingDRV Engine Pharlap.llb\RT Driver VI.vi</Path>
+				</Source>
+				    <RealTimeSystemDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine Pharlap.llb\RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>
+			  <Source>
+				    <SupportedTarget>VxWorks</SupportedTarget>
+				    <Source>
+					    <Type>To Common Doc Dir</Type>
+					    <Path>Timing and Sync\TimingDRV\VxWorks\TimingDRV Engine VxWorks.llb\RT Driver VI.vi</Path>
+				</Source>
+				    <RealTimeSystemDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine VxWorks.llb\RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>	
+			  <Source>
+				    <SupportedTarget>Linux_32_ARM</SupportedTarget>
+				    <Source>
+					    <Type>To Common Doc Dir</Type>
+					    <Path>Timing and Sync\TimingDRV\Linux_32_ARM\TimingDRV Engine LinuxARM.llb\RT Driver VI.vi</Path>
+				</Source>
+				    <RealTimeSystemDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine LinuxARM.llb\RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>
+			  <Source>
+				    <SupportedTarget>Linux_x64</SupportedTarget>
+				    <Source>
+					    <Type>To Common Doc Dir</Type>
+					    <Path>Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine Linux64.llb\RT Driver VI.vi</Path>
+				</Source>
+				    <RealTimeSystemDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine Linux64.llb\RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>
+		</SourceDistribution>
+	</CustomDeviceVI>
+  <Dependencies>
+    <Dependency>
+      <SupportedTarget>Linux_x64</SupportedTarget>
+      <Source>
+        <Type>To Common Doc Dir</Type>
+        <Path>Source Path Value</Path>
+      </Source>
+      <RealTimeSystemDestination>RT Destination Value</RealTimeSystemDestination>
+    </Dependency>
+  </Dependencies>
+  <Pages>
+    <Page>
+      <Name>
+        <eng>TimingDRV</eng>
+        <loc>TimingDRV</loc>
+      </Name>
+      <GUID>bcaf5088-395a-4ad9-9122-12b389f961d4</GUID>
+      <Glyph>
+			    <Type>To Application Data Dir</Type>
+			    <Path>System Explorer\Glyphs\timingsource.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		      <Path>Timing and Sync\TimingDRV\TimingDRV Configuration.llb\Main Page.vi</Path>
+      </Item2Launch>
+	  
+	    <ActionVIOnDelete>
+        <Type>To Common Doc Dir</Type>
+        <Path>Timing and Sync\TimingDRV\TimingDRV Configuration.llb\ActionVIOnDelete.vi</Path>
+      </ActionVIOnDelete>
+	  
+    </Page>
+    
+    <Page>
+      <Name>
+        <eng>AO</eng>
+        <loc>AO</loc>
+      </Name>
+      <GUID>0b83ef27-0fd3-4245-a651-6f77db6db129</GUID>
+      <Glyph>
+			    <Type>To Application Data Dir</Type>
+			    <Path>System Explorer\Glyphs\NI-XNET Signal.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		      <Path>Timing and Sync\TimingDRV\TimingDRV Configuration.llb\AO.vi</Path>
+      </Item2Launch>
+    </Page>
+    <Page>
+      <Name>
+        <eng>Page2</eng>
+        <loc>Page2</loc>
+      </Name>
+      <GUID>b2aaf9de-fdd7-465c-a29d-d7c936e94aaf</GUID>
+      <Glyph>
+			    <Type>To Application Data Dir</Type>
+			    <Path>System Explorer\Glyphs\default fpga category.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		      <Path>Timing and Sync\TimingDRV\TimingDRV Configuration.llb\Page2.vi</Path>
+      </Item2Launch>
+    </Page>
+    <Page>
+      <Name>
+        <eng>Page3</eng>
+        <loc>Page3</loc>
+      </Name>
+      <GUID>1925c9cf-ffd8-4160-9927-fd0aac2e450f</GUID>
+      <Glyph>
+			    <Type>To Application Data Dir</Type>
+			    <Path>System Explorer\Glyphs\default fpga category.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		      <Path>Timing and Sync\TimingDRV\TimingDRV Configuration.llb\Page3.vi</Path>
+      </Item2Launch>
+    </Page>
+  </Pages>
+  <CustomXML>
+    <Dummy/>
+  </CustomXML>
+
+
+
+
+
+</CustomDevice>
