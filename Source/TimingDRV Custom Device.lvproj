@@ -838,12 +838,18 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../Built/TimingDRV/Windows</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{70E80323-1C7D-4096-BB63-3C2427049A60}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{6A04A53A-CFC8-48A9-9B6A-CACB35C43020}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/TimingDRV Engine.lvlib/Engine/RT Driver VI.vi</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="Source[2].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[2].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/TimingDRV Engine.lvlib/Engine</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[2].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
 			</Item>
 			<Item Name="Engine Release" Type="Source Distribution">
 				<Property Name="Bld_buildCacheID" Type="Str">{BDB37E78-1B48-4DD8-B51B-9DFE56743A02}</Property>
@@ -861,7 +867,7 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../Built/TimingDRV/Windows</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{80E410EA-1DE2-470F-852D-0D60C146A698}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{6A04A53A-CFC8-48A9-9B6A-CACB35C43020}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/TimingDRV Engine.lvlib/Engine/RT Driver VI.vi</Property>
@@ -1026,17 +1032,50 @@
 				<Property Name="Source[1].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT PXI Target/TimingDRV Engine.lvlib/Engine</Property>
+				<Property Name="Source[1].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[1].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[1].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[1].properties[2].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[1].properties[2].value" Type="Bool">false</Property>
+				<Property Name="Source[1].properties[3].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[1].properties[3].value" Type="Bool">true</Property>
+				<Property Name="Source[1].properties[4].type" Type="Str">Auto error handling</Property>
+				<Property Name="Source[1].properties[4].value" Type="Bool">false</Property>
+				<Property Name="Source[1].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[1].type" Type="Str">Container</Property>
 				<Property Name="Source[2].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[2].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/RT PXI Target/TimingDRV Shared.lvlib/Shared</Property>
+				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[2].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[2].properties[2].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[2].properties[2].value" Type="Bool">false</Property>
+				<Property Name="Source[2].properties[3].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[2].properties[3].value" Type="Bool">true</Property>
+				<Property Name="Source[2].properties[4].type" Type="Str">Auto error handling</Property>
+				<Property Name="Source[2].properties[4].value" Type="Bool">false</Property>
+				<Property Name="Source[2].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[2].type" Type="Str">Container</Property>
 				<Property Name="Source[3].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[3].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[3].itemID" Type="Ref">/RT PXI Target/NI VeriStand APIs</Property>
+				<Property Name="Source[3].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[3].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[3].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[3].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[3].properties[2].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[3].properties[2].value" Type="Bool">false</Property>
+				<Property Name="Source[3].properties[3].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[3].properties[3].value" Type="Bool">true</Property>
+				<Property Name="Source[3].properties[4].type" Type="Str">Auto error handling</Property>
+				<Property Name="Source[3].properties[4].value" Type="Bool">false</Property>
+				<Property Name="Source[3].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[3].type" Type="Str">Container</Property>
 				<Property Name="SourceCount" Type="Int">4</Property>
 			</Item>
@@ -1249,17 +1288,50 @@ DirectoryIndex index.htm
 				<Property Name="Source[1].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target/TimingDRV Engine.lvlib/Engine</Property>
+				<Property Name="Source[1].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[1].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[1].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[1].properties[2].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[1].properties[2].value" Type="Bool">false</Property>
+				<Property Name="Source[1].properties[3].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[1].properties[3].value" Type="Bool">true</Property>
+				<Property Name="Source[1].properties[4].type" Type="Str">Auto error handling</Property>
+				<Property Name="Source[1].properties[4].value" Type="Bool">false</Property>
+				<Property Name="Source[1].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[1].type" Type="Str">Container</Property>
 				<Property Name="Source[2].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[2].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/RT CompactRIO Target/TimingDRV Shared.lvlib/Shared</Property>
+				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[2].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[2].properties[2].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[2].properties[2].value" Type="Bool">false</Property>
+				<Property Name="Source[2].properties[3].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[2].properties[3].value" Type="Bool">true</Property>
+				<Property Name="Source[2].properties[4].type" Type="Str">Auto error handling</Property>
+				<Property Name="Source[2].properties[4].value" Type="Bool">false</Property>
+				<Property Name="Source[2].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[2].type" Type="Str">Container</Property>
 				<Property Name="Source[3].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[3].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[3].itemID" Type="Ref">/RT CompactRIO Target/NI VeriStand APIs</Property>
+				<Property Name="Source[3].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[3].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[3].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[3].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[3].properties[2].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[3].properties[2].value" Type="Bool">false</Property>
+				<Property Name="Source[3].properties[3].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[3].properties[3].value" Type="Bool">true</Property>
+				<Property Name="Source[3].properties[4].type" Type="Str">Auto error handling</Property>
+				<Property Name="Source[3].properties[4].value" Type="Bool">false</Property>
+				<Property Name="Source[3].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[3].type" Type="Str">Container</Property>
 				<Property Name="SourceCount" Type="Int">4</Property>
 			</Item>
@@ -1440,17 +1512,50 @@ DirectoryIndex index.htm
 				<Property Name="Source[1].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target - Linux ARM/TimingDRV Engine.lvlib/Engine</Property>
+				<Property Name="Source[1].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[1].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[1].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[1].properties[2].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[1].properties[2].value" Type="Bool">false</Property>
+				<Property Name="Source[1].properties[3].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[1].properties[3].value" Type="Bool">true</Property>
+				<Property Name="Source[1].properties[4].type" Type="Str">Auto error handling</Property>
+				<Property Name="Source[1].properties[4].value" Type="Bool">false</Property>
+				<Property Name="Source[1].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[1].type" Type="Str">Container</Property>
 				<Property Name="Source[2].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[2].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/RT CompactRIO Target - Linux ARM/TimingDRV Shared.lvlib/Shared</Property>
+				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[2].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[2].properties[2].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[2].properties[2].value" Type="Bool">false</Property>
+				<Property Name="Source[2].properties[3].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[2].properties[3].value" Type="Bool">true</Property>
+				<Property Name="Source[2].properties[4].type" Type="Str">Auto error handling</Property>
+				<Property Name="Source[2].properties[4].value" Type="Bool">false</Property>
+				<Property Name="Source[2].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[2].type" Type="Str">Container</Property>
 				<Property Name="Source[3].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[3].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[3].itemID" Type="Ref">/RT CompactRIO Target - Linux ARM/NI VeriStand APIs</Property>
+				<Property Name="Source[3].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[3].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[3].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[3].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[3].properties[2].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[3].properties[2].value" Type="Bool">false</Property>
+				<Property Name="Source[3].properties[3].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[3].properties[3].value" Type="Bool">true</Property>
+				<Property Name="Source[3].properties[4].type" Type="Str">Auto error handling</Property>
+				<Property Name="Source[3].properties[4].value" Type="Bool">false</Property>
+				<Property Name="Source[3].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[3].type" Type="Str">Container</Property>
 				<Property Name="SourceCount" Type="Int">4</Property>
 			</Item>
@@ -1632,17 +1737,50 @@ DirectoryIndex index.htm
 				<Property Name="Source[1].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target - Linux x64/TimingDRV Engine.lvlib/Engine</Property>
+				<Property Name="Source[1].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[1].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[1].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[1].properties[2].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[1].properties[2].value" Type="Bool">false</Property>
+				<Property Name="Source[1].properties[3].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[1].properties[3].value" Type="Bool">true</Property>
+				<Property Name="Source[1].properties[4].type" Type="Str">Auto error handling</Property>
+				<Property Name="Source[1].properties[4].value" Type="Bool">false</Property>
+				<Property Name="Source[1].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[1].type" Type="Str">Container</Property>
 				<Property Name="Source[2].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[2].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/RT CompactRIO Target - Linux x64/TimingDRV Shared.lvlib/Shared</Property>
+				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[2].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[2].properties[2].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[2].properties[2].value" Type="Bool">false</Property>
+				<Property Name="Source[2].properties[3].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[2].properties[3].value" Type="Bool">true</Property>
+				<Property Name="Source[2].properties[4].type" Type="Str">Auto error handling</Property>
+				<Property Name="Source[2].properties[4].value" Type="Bool">false</Property>
+				<Property Name="Source[2].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[2].type" Type="Str">Container</Property>
 				<Property Name="Source[3].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[3].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[3].itemID" Type="Ref">/RT CompactRIO Target - Linux x64/NI VeriStand APIs</Property>
+				<Property Name="Source[3].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[3].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[3].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[3].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[3].properties[2].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[3].properties[2].value" Type="Bool">false</Property>
+				<Property Name="Source[3].properties[3].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[3].properties[3].value" Type="Bool">true</Property>
+				<Property Name="Source[3].properties[4].type" Type="Str">Auto error handling</Property>
+				<Property Name="Source[3].properties[4].value" Type="Bool">false</Property>
+				<Property Name="Source[3].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[3].type" Type="Str">Container</Property>
 				<Property Name="SourceCount" Type="Int">4</Property>
 			</Item>
