@@ -10,7 +10,7 @@
 				<String>CDTest</String>
 			</Property>
 			<Property Name="Version">
-				<String>1.0.0.63</String>
+				<String>1.0.0.136</String>
 			</Property>
 			<Property Name="Creator">
 				<String />
@@ -28,10 +28,10 @@
 				<Description />
 				<Properties>
 					<Property Name="OS">
-						<String>Linux_x64</String>
+						<String>Windows</String>
 					</Property>
 					<Property Name="IP Address">
-						<String>10.113.1.184</String>
+						<String>localhost</String>
 					</Property>
 					<Property Name="Control Loop Processor">
 						<I32>-2</I32>
@@ -55,10 +55,10 @@
 						<Boolean>false</Boolean>
 					</Property>
 					<Property Name="Engine Rate">
-						<Double>100</Double>
+						<Double>1000</Double>
 					</Property>
 					<Property Name="TL timeout">
-						<Double>240</Double>
+						<Double>120</Double>
 					</Property>
 					<Property Name="daq timeout">
 						<U32>1000</U32>
@@ -88,7 +88,7 @@
 						<U32>0</U32>
 					</Property>
 					<Property Name="ts">
-						<U32>2</U32>
+						<U32>0</U32>
 					</Property>
 					<Property Name="Warmup Time [ms]">
 						<U32>2000</U32>
@@ -104,9 +104,6 @@
 					</Property>
 					<Property Name="Username">
 						<String>admin</String>
-					</Property>
-					<Property Name="TS_Custom_Dev_Resolved">
-						<DependentNode Path="Targets/Controller/Hardware/Chassis/Timing and Sync/TimingDRV" />
 					</Property>
 				</Properties>
 				<Errors />
@@ -126,383 +123,6 @@
 							<Description />
 							<Properties />
 							<Errors />
-							<Section Name="TimingDRV" TypeGUID="bcaf5088-395a-4ad9-9122-12b389f961d4">
-								<Description />
-								<Properties>
-									<Property Name="CD Status">
-										<U32>1</U32>
-									</Property>
-									<Property Name="Driver VI Exec Mode">
-										<U32>4</U32>
-									</Property>
-									<Property Name="Driver VI Path_0">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine Linux64.llb\RT Driver VI.vi">
-											<Version>1.0.0</Version>
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine Linux64.llb\RT Driver VI.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5 />
-										</DependentFile>
-									</Property>
-									<Property Name="Driver VI Path_1">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_32_ARM\TimingDRV Engine LinuxARM.llb\RT Driver VI.vi">
-											<Version>1.0.0</Version>
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine LinuxARM.llb\RT Driver VI.vi</RTDestination>
-											<SupportedTarget>Linux_32_ARM</SupportedTarget>
-											<MD5 />
-										</DependentFile>
-									</Property>
-									<Property Name="Driver VI Path_2">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\VxWorks\TimingDRV Engine VxWorks.llb\RT Driver VI.vi">
-											<Version>1.0.0</Version>
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine VxWorks.llb\RT Driver VI.vi</RTDestination>
-											<SupportedTarget>VxWorks</SupportedTarget>
-											<MD5 />
-										</DependentFile>
-									</Property>
-									<Property Name="Driver VI Path_3">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\PharLap\TimingDRV Engine Pharlap.llb\RT Driver VI.vi">
-											<Version>1.0.0</Version>
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine Pharlap.llb\RT Driver VI.vi</RTDestination>
-											<SupportedTarget>PharLap</SupportedTarget>
-											<MD5 />
-										</DependentFile>
-									</Property>
-									<Property Name="Driver VI Path_4">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Windows\TimingDRV Engine Windows.llb\RT Driver VI.vi">
-											<Version>1.0.0</Version>
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine Windows.llb\RT Driver VI.vi</RTDestination>
-											<SupportedTarget>Windows</SupportedTarget>
-											<MD5 />
-										</DependentFile>
-									</Property>
-									<Property Name="Version">
-										<String>1.0.0</String>
-									</Property>
-									<Property Name="Timing Source Init VI_0">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_32_ARM\TimingDRV Engine LinuxARM.llb\Timing Source Initialization.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\NIVeriStand\Timing and Sync\TimingDRV\TimingDRV Engine LinuxARM.llb\Timing Source Initialization.vi</RTDestination>
-											<SupportedTarget>Linux_32_ARM</SupportedTarget>
-											<MD5 />
-										</DependentFile>
-									</Property>
-									<Property Name="Timing Source Init VI_1">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine Linux64.llb\Timing Source Initialization.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\NIVeriStand\Timing and Sync\TimingDRV\TimingDRV Engine Linux64.llb\Timing Source Initialization.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5 />
-										</DependentFile>
-									</Property>
-									<Property Name="Timing Source Init VI_2">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\VxWorks\TimingDRV Engine VxWorks.llb\Timing Source Initialization.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\NIVeriStand\Timing and Sync\TimingDRV\TimingDRV Engine VxWorks.llb\Timing Source Initialization.vi</RTDestination>
-											<SupportedTarget>VxWorks</SupportedTarget>
-											<MD5 />
-										</DependentFile>
-									</Property>
-									<Property Name="Timing Source Init VI_3">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\PharLap\TimingDRV Engine Pharlap.llb\Timing Source Initialization.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\NIVeriStand\Timing and Sync\TimingDRV\TimingDRV Engine Pharlap.llb\Timing Source Initialization.vi</RTDestination>
-											<SupportedTarget>PharLap</SupportedTarget>
-											<MD5 />
-										</DependentFile>
-									</Property>
-									<Property Name="Timing Source Init VI_4">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Windows\TimingDRV Engine Windows.llb\Timing Source Initialization.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\NIVeriStand\Timing and Sync\TimingDRV\TimingDRV Engine Windows.llb\Timing Source Initialization.vi</RTDestination>
-											<SupportedTarget>Windows</SupportedTarget>
-											<MD5 />
-										</DependentFile>
-									</Property>
-									<Property Name="Timing Source Init VI_5">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Windows\TimingDRV Engine Windows.llb\Timing Source Initialization.vi">
-											<Version />
-											<ForceDownload>true</ForceDownload>
-											<RTDestination>c:\ni-rt\NIVeriStand\Timing and Sync\TimingDRV\TimingDRV Engine Windows.llb\Timing Source Initialization.vi</RTDestination>
-											<SupportedTarget>PharLap &amp; Windows</SupportedTarget>
-											<MD5 />
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_1">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Process\Configure.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Process\Configure.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>0f52bf5b052c2cc57791e7044c28fcff</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_2">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Process\Initialize.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Process\Initialize.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>dc2d6546552fd6838ce9175b59d4419a</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_3">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Process\Launcher.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Process\Launcher.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>b6e1855ea9c40b72f7eacba1f49df796</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_4">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Process\Main.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Process\Main.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>306e13e3cbaa09f4b2c47159657ee2c1</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_5">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Process\Shutdown.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Process\Shutdown.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>0af6ae168848d1f8a6e158cf048c8f5a</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_6">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Assembler\Configure.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Assembler\Configure.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>01ca2a3e416cdb180f452b766e910fb9</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_7">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Assembler\Initialize.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Assembler\Initialize.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>a623c6f4eb22cec395d9d22be0a5ae74</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_8">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Assembler\Launcher.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Assembler\Launcher.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>051ad00c0d2a2d18a8b34d85e450a2a5</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_9">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Assembler\Main.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Assembler\Main.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>63702a6b348d6197f6c7629e5d2b4d66</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_10">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Assembler\Shutdown.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Assembler\Shutdown.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>38fa4f8608f964ac1cafe3daf5466f0a</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_11">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Random Process\Configure.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Random Process\Configure.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>0020f6cd63914c819e62939c78b581cc</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_12">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Random Process\Initialize.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Random Process\Initialize.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>2f83080e27620e1bbf302ed5e9001a28</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_13">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Random Process\Main.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Random Process\Main.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>2ef81ad47cfc494f20ddc2fad295f212</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_14">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Random Process\Get Output Channel Values.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Random Process\Get Output Channel Values.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>dd963f8858b01b4198b49bb105556ce5</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_15">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Random Process\Get Output FIFOs.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Random Process\Get Output FIFOs.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>f7372fbcdf418e259aac5acb039d249e</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_16">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Random Process\Initialize Output Channel Values.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Random Process\Initialize Output Channel Values.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>5b40a0c55196c4cf6f99cac2f65d0dd8</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_17">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Random Process\Set Output Channel Values.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Random Process\Set Output Channel Values.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>e6be2b71a9681a4e614c036e8874dc84</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_18">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Random Process\Set Output FIFOs.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Random Process\Set Output FIFOs.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>99e3e492ecaf774545f90696ff734d12</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_19">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Random Process\Update Channel Value.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Random Process\Update Channel Value.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>60656fc2fbed6aa0c19b50610397db84</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_20">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Sine Process\Configure.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Sine Process\Configure.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>decd56e2477a5a8b56141bccb6450709</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_21">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Sine Process\Initialize.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Sine Process\Initialize.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>deb26ea356fca6e436e69778fc039170</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_22">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Sine Process\Main.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Sine Process\Main.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>acb94db7104d4c3cfc50ff1eadccb132</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_23">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Sine Process\Get Output Channel Values.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Sine Process\Get Output Channel Values.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>c6d699e5d300c443a0289d323008c4f5</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_24">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Sine Process\Get Output FIFOs.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Sine Process\Get Output FIFOs.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>7e72510e6d94d2add75bf30c2daf133d</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_25">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Sine Process\Initialize Output Channel Values.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Sine Process\Initialize Output Channel Values.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>4fdd26cf6018ccb00753cfca414c88ad</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_26">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Sine Process\Set Output Channel Values.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Sine Process\Set Output Channel Values.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>97bfcaa19af232d0b0f3aa09b608cf64</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_27">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Sine Process\Set Output FIFOs.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Sine Process\Set Output FIFOs.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>de5121d6140c7b6900481b554100347e</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="Dependency_28">
-										<DependentFile Type="To Common Doc Dir" Path="Timing and Sync\TimingDRV\Linux_x64\TimingDRV Engine.lvlib_Sine Process\Update Channel Value.vi">
-											<Version />
-											<ForceDownload>false</ForceDownload>
-											<RTDestination>c:\ni-rt\VeriStand\Timing and Sync\TimingDRV\TimingDRV Engine.lvlib_Sine Process\Update Channel Value.vi</RTDestination>
-											<SupportedTarget>Linux_x64</SupportedTarget>
-											<MD5>49de559624f8ec05a3ef3b875ef16d9d</MD5>
-										</DependentFile>
-									</Property>
-									<Property Name="user.CD.Process">
-										<BinaryString>AAAAAS8WVGltaW5nRFJWIEVuZ2luZS5sdmxpYhZSYW5kb20gUHJvY2Vzcy5sdmNsYXNzAAAAAAAAAAAA</BinaryString>
-									</Property>
-								</Properties>
-								<Errors />
-								<Channel Name="AO" TypeGUID="0b83ef27-0fd3-4245-a651-6f77db6db129" RowDim="1" ColDim="1" Units="" BitFields="1">
-									<Description />
-									<Properties />
-									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
-							</Section>
 						</Section>
 						<Section Name="DAQ" TypeGUID="77550612-1485-13A6-56570AB5032158E9">
 							<Description />
@@ -569,6 +189,1229 @@
 					<Description />
 					<Properties />
 					<Errors />
+					<Section Name="TelemetryAsync" TypeGUID="aa078f07-cb98-4ee0-bd3e-f0e57f8a5fbe">
+						<Description />
+						<Properties>
+							<Property Name="CD Status">
+								<U32>1</U32>
+							</Property>
+							<Property Name="Driver VI Exec Mode">
+								<U32>0</U32>
+							</Property>
+							<Property Name="Driver VI Path_0">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine Linux64.llb\RT Driver VI.vi">
+									<Version>1.0.0</Version>
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine Linux64.llb\RT Driver VI.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5 />
+								</DependentFile>
+							</Property>
+							<Property Name="Driver VI Path_1">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine LinuxARM.llb\RT Driver VI.vi">
+									<Version>1.0.0</Version>
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine LinuxARM.llb\RT Driver VI.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5 />
+								</DependentFile>
+							</Property>
+							<Property Name="Driver VI Path_2">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine VxWorks.llb\RT Driver VI.vi">
+									<Version>1.0.0</Version>
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine VxWorks.llb\RT Driver VI.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5 />
+								</DependentFile>
+							</Property>
+							<Property Name="Driver VI Path_3">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\PharLap\TelemetryAsync Engine Pharlap.llb\RT Driver VI.vi">
+									<Version>1.0.0</Version>
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine Pharlap.llb\RT Driver VI.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5 />
+								</DependentFile>
+							</Property>
+							<Property Name="Driver VI Path_4">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Windows\TelemetryAsync Engine Windows.llb\RT Driver VI.vi">
+									<Version>1.0.0</Version>
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine Windows.llb\RT Driver VI.vi</RTDestination>
+									<SupportedTarget>Windows</SupportedTarget>
+									<MD5 />
+								</DependentFile>
+							</Property>
+							<Property Name="Version">
+								<String>1.0.0</String>
+							</Property>
+							<Property Name="Dependency_1">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Assembler\Main.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Assembler\Main.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>ded28d31477efa90e7365e987d9622b8</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_2">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Input Process\Main.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Input Process\Main.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>db8ae22eb85464c5b80a3a870631e8d0</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_3">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Output Process\Initialize Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Initialize Output Channel Values.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>71484d13b62b92ab2672e7690f26c86f</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_4">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Sine Process\Initialize Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Initialize Output Channel Values.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>2cb1850e578b58442b624c35b2e6c65c</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_5">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Output Process\Update Channel Value.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Update Channel Value.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>a51f4ffb3d5065b94cd8db47ed1d30f6</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_6">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Sine Process\Update Channel Value.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Update Channel Value.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>b139ae44c64b4b7c1a59ffbcf2186ad7</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_7">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Random Process\Initialize Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Initialize Output Channel Values.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>4c581019fe39167e988c466d229fd96e</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_8">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Random Process\Update Channel Value.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Update Channel Value.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>afca3b40f40ec5bb28aec8ece2fb3527</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_9">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Assembler\Configure.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Assembler\Configure.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>aa3d56b74f7405980f9e3db72ce31a81</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_10">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Output Process\Configure.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Configure.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>8338a18ce11b6c63fcc93fef11eb3313</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_11">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Assembler\Initialize.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Assembler\Initialize.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>5cba1ff7c90369d941a3cd46fca3b01e</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_12">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Output Process\Initialize.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Initialize.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>139d03b5e05343184b5d76e111505c88</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_13">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Output Process\Main.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Main.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>e210ad175590b0790883ea350878f48f</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_14">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Output Process\Get Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Get Output Channel Values.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>3201fb6e1352424102fa28e345a0aac9</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_15">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Sine Process\Get Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Get Output Channel Values.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>ea41651788e0e8a6b621dcdb4340cd51</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_16">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Output Process\Set Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Set Output Channel Values.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>765ee05ab7a340a80092da9b16afc3fb</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_17">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Sine Process\Set Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Set Output Channel Values.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>f526ed3592f8d0b6fec4b819f3e79500</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_18">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Sine Process\Configure.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Configure.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>eda65db822464e96e17d93647598444e</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_19">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Sine Process\Initialize.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Initialize.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>f84cf0300611b8dee341909f2251a98b</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_20">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Sine Process\Main.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Main.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>6ab06fb2a0e6a8e331f0f7f233305b33</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_21">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Random Process\Get Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Get Output Channel Values.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>208ca6b37287e9bde1d45dd6de3a1a8b</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_22">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Random Process\Set Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Set Output Channel Values.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>cff361dc9635440957d62d9e277f5823</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_23">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Random Process\Configure.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Configure.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>711b5066196b304c615b6307d53361ce</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_24">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Random Process\Initialize.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Initialize.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>9baa985fd1c430989bdd00ed74dfcc15</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_25">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Random Process\Main.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Main.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>b489102a61545b8fc226906c63d9505e</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_26">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Process\Configure.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Process\Configure.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>aefdb1ebfb83a79dd7784ee09c6254bf</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_27">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Assembler\Launcher.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Assembler\Launcher.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>920c17fa6a810767a59d4dc15a4e9b6b</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_28">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Process\Launcher.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Process\Launcher.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>005b24b9b669090128b58e59ea693815</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_29">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Process\Initialize.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Process\Initialize.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>cc61efcfb72bb493890443f20eabc5cc</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_30">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Process\Main.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Process\Main.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>90b29aa0144e63af02f03b69060b0e1d</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_31">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Assembler\Shutdown.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Assembler\Shutdown.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>ae19d67673777e9e608f6829ff624429</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_32">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Pharlap\TelemetryAsync Engine.lvlib_Process\Shutdown.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Process\Shutdown.vi</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>95d8212ed1ef970f1e2cfa9fcdb525f5</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_33">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Assembler\Main.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Assembler\Main.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>4603703787136b0129a26a906068c36b</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_34">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Input Process\Main.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Input Process\Main.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>8155b08465ba0a82547c36c2c02291d0</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_35">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Output Process\Initialize Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Initialize Output Channel Values.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>340aa3828af0de78d6bc13bcbe8dec67</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_36">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Sine Process\Initialize Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Initialize Output Channel Values.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>0c38707e0667cb9a524119a328f33aba</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_37">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Output Process\Update Channel Value.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Update Channel Value.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>498f10241549f8fc91502e80b0187fac</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_38">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Sine Process\Update Channel Value.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Update Channel Value.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>98b64bedd6e9fe92e68f3aceb246b942</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_39">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Random Process\Initialize Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Initialize Output Channel Values.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>3b1a9d92684ac100434a2788f62dfd8e</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_40">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Random Process\Update Channel Value.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Update Channel Value.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>591b14f97b3a2debbfdb4fc5a891b618</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_41">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Assembler\Configure.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Assembler\Configure.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>519aec71458564b804c09c3be3841e88</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_42">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Output Process\Configure.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Configure.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>35f91c00807c5a68284183e197c4406b</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_43">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Assembler\Initialize.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Assembler\Initialize.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>7cd79ce1ef86a94593d93bec96dcc199</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_44">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Output Process\Initialize.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Initialize.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>2a4c7f8293956fe593d6c91800efe36b</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_45">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Output Process\Main.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Main.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>cf403cf25fc250a9c15b883159ddce11</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_46">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Output Process\Get Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Get Output Channel Values.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>1f055d4cbb4668118897fea756a92653</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_47">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Sine Process\Get Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Get Output Channel Values.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>94d303ac4a658d1c18384ad9bfc280ad</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_48">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Output Process\Set Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Set Output Channel Values.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>1f0e6a3f986ca43258b6977e247a0d2a</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_49">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Sine Process\Set Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Set Output Channel Values.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>6f083387339c9c4fb68d4afa5a580d4c</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_50">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Sine Process\Configure.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Configure.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>d790aa5c7e2336c6365f9ea54ed172a2</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_51">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Sine Process\Initialize.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Initialize.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>315d7285593c4a967f238a9693930dbc</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_52">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Sine Process\Main.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Main.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>e5028cb0d3489f71555e46670493457d</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_53">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Random Process\Get Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Get Output Channel Values.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>a6af41c1033f0ccbfce050ca0abd7115</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_54">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Random Process\Set Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Set Output Channel Values.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>b0a905c2d48a7740dc214d51ed790836</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_55">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Random Process\Configure.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Configure.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>282aaad806fbcbdf661299bbb3364656</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_56">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Random Process\Initialize.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Initialize.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>3775d4db7c1f4b864008809f7292c72b</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_57">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Random Process\Main.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Main.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>12bdfc7d13fecb85efeb7b8c17ff3be2</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_58">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Process\Configure.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Process\Configure.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>ff37db615ce7cb32255ee9578a6f5f91</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_59">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Assembler\Launcher.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Assembler\Launcher.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>fd3a18980bc29b203273c001719530c5</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_60">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Process\Launcher.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Process\Launcher.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>e4e429a31f9183bf839f0e1827592a32</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_61">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Process\Initialize.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Process\Initialize.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>54e049b3b92cd8f1729a2408d08c9cbd</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_62">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Process\Main.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Process\Main.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>910a2091d0107887c0be4f7b98dcbf83</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_63">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Assembler\Shutdown.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Assembler\Shutdown.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>1f83a97ca91bfdb8ab73ffafb0e56e9d</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_64">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\VxWorks\TelemetryAsync Engine.lvlib_Process\Shutdown.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Process\Shutdown.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5>d255ae4d2fc52ebaad5a8c36c80b3199</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_65">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Assembler\Main.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Assembler\Main.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>68392c45641dd65cb623e0d2c89b9a86</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_66">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Input Process\Main.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Input Process\Main.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>76ee3ae1d2b3420bdd16dd4102257f79</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_67">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Output Process\Initialize Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Initialize Output Channel Values.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>eac1d20a7e378b3a6932fb4648c297d0</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_68">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Sine Process\Initialize Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Initialize Output Channel Values.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>5744644053753914fed15574c5b0f848</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_69">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Output Process\Update Channel Value.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Update Channel Value.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>57fe0568f58f1cb367c6a59d08d14d62</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_70">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Sine Process\Update Channel Value.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Update Channel Value.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>35b2fabc29fdc28d0ffb112ff83488b2</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_71">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Random Process\Initialize Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Initialize Output Channel Values.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>46aa03b120bde31caa2ffbfff9407c89</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_72">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Random Process\Update Channel Value.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Update Channel Value.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>1bea233c7de94dec61208dae3418f74b</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_73">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Assembler\Configure.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Assembler\Configure.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>21adbe3883902e7b49627419c5b0c949</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_74">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Output Process\Configure.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Configure.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>f68befe87519e0103e102cd4be94ab33</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_75">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Assembler\Initialize.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Assembler\Initialize.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>3d2d6b65fb0342041aa426a906663d19</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_76">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Output Process\Initialize.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Initialize.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>1e66c2202b2b671cf771893172103833</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_77">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Output Process\Main.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Main.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>198a13f6640fed5278cec4ad2d9b92a8</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_78">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Output Process\Get Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Get Output Channel Values.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>b36c9d432ca960886bcd23ac01d43b96</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_79">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Sine Process\Get Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Get Output Channel Values.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>1daf91688cd6336ac8f45a9b0d10e04a</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_80">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Output Process\Set Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Set Output Channel Values.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>44791344ed38a03539b921d53365c502</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_81">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Sine Process\Set Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Set Output Channel Values.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>d0130b7b876256050e1e22cc9558fdd6</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_82">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Sine Process\Configure.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Configure.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>9a777e19b8afdbd0318b66024ffc2c20</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_83">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Sine Process\Initialize.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Initialize.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>9c3aeed5df768d9be5a77ea5d52d7c0e</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_84">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Sine Process\Main.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Main.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>daba83c922248f65ec5457f877dea221</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_85">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Random Process\Get Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Get Output Channel Values.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>835227b1bdbdaebde307ce35762f3d81</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_86">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Random Process\Set Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Set Output Channel Values.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>223c8649ee09e18a7cf599b4eb79c809</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_87">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Random Process\Configure.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Configure.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>d163e21dd1a7bdb1640d6e6ec0883584</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_88">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Random Process\Initialize.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Initialize.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>b7f0f36964797c6a9ae470e12c76869b</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_89">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Random Process\Main.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Main.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>337bce760e7daa316cb80236a1897db2</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_90">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Process\Configure.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Process\Configure.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>8510d0e589879c0dee298c13e9c34783</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_91">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Assembler\Launcher.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Assembler\Launcher.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>e1c47c28e8ba3e74df5d578e95e419ea</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_92">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Process\Launcher.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Process\Launcher.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>d59f4d73daaf2e2fa21d7ca4aa9c0f8e</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_93">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Process\Initialize.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Process\Initialize.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>7c9d54132e7d452b33d57d05ff770f85</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_94">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Process\Main.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Process\Main.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>b8c55a6bf3c3d38ecbcf077d5d44f4a3</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_95">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Assembler\Shutdown.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Assembler\Shutdown.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>41477e3b7c8e0b01d197964096aa7a29</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_96">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_32_ARM\TelemetryAsync Engine.lvlib_Process\Shutdown.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Process\Shutdown.vi</RTDestination>
+									<SupportedTarget>Linux_32_ARM</SupportedTarget>
+									<MD5>a49041f0fc2287a830f2189e2c1e4ce0</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_97">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Assembler\Main.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Assembler\Main.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>5eee9c28feb70701ae565cd0a00f624f</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_98">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Input Process\Main.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Input Process\Main.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>b4c79f12795c4e6b3f78dfa083cbea25</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_99">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Output Process\Initialize Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Initialize Output Channel Values.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>10da75adb8e3c49e2c0c50780ba7277d</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_100">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Sine Process\Initialize Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Initialize Output Channel Values.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>714f143db61b6c9850d18b453237aa62</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_101">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Output Process\Update Channel Value.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Update Channel Value.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>c880090fdc30275f1f1721179a0f6b53</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_102">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Sine Process\Update Channel Value.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Update Channel Value.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>3e04c6afc4313cff7eec5f784660becd</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_103">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Random Process\Initialize Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Initialize Output Channel Values.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>a9d4c4ea1d5ed5c93fc22d8284ed3d10</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_104">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Random Process\Update Channel Value.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Update Channel Value.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>2b755ac28d80ed131e383e555fa23a8c</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_105">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Assembler\Configure.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Assembler\Configure.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>4a64b95d3a956167bcd3db976b78e03b</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_106">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Output Process\Configure.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Configure.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>fa3de0a4f0a267c5cc1d36da87037718</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_107">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Assembler\Initialize.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Assembler\Initialize.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>a15a599125d86f47891ed84a06bb277e</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_108">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Output Process\Initialize.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Initialize.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>304b361532ce300083ceb7bd56dfe34e</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_109">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Output Process\Main.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Main.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>f2408e8e1fc655123b49ee8982e34b1b</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_110">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Output Process\Get Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Get Output Channel Values.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>0609572530ff30773fd9f0ab118e2ebc</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_111">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Sine Process\Get Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Get Output Channel Values.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>ccb1ea4762b77a2ee0faeb180e43b2a5</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_112">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Output Process\Set Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Output Process\Set Output Channel Values.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>505d7f544708a6c57f1496a87b6bfcf0</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_113">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Sine Process\Set Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Set Output Channel Values.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>e52dedb5c8b3ae41a9f1b8cdb883b12f</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_114">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Sine Process\Configure.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Configure.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>cb9321a3a4db8be441812ee5764c0fe8</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_115">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Sine Process\Initialize.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Initialize.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>6d91d57d35d4516817873defd5a323f2</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_116">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Sine Process\Main.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Sine Process\Main.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>92c4d24aa505b8db0f13e443c1123b5b</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_117">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Random Process\Get Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Get Output Channel Values.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>66149b44238faeabdc7e7a78efaea3da</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_118">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Random Process\Set Output Channel Values.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Set Output Channel Values.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>adc73d50ed37749e0137560b1523fbe9</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_119">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Random Process\Configure.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Configure.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>a7ce9611fb045033d75586055e1cd007</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_120">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Random Process\Initialize.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Initialize.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>4b4c98ebfd769a9f35ba3e53a04ffe76</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_121">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Random Process\Main.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Random Process\Main.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>7157f13b32aa1ff81988f7a7e6744920</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_122">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Process\Configure.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Process\Configure.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>2fcd99eec7d5ee2771043f12b2132296</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_123">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Assembler\Launcher.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Assembler\Launcher.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>723b63012a53b8da55ae40477fc10621</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_124">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Process\Launcher.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Process\Launcher.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>f6f2054a19c1b44bf60ef74b505e39dd</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_125">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Process\Initialize.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Process\Initialize.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>e364d057bf927815f60f024b03fc238f</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_126">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Process\Main.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Process\Main.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>b1379d9ccf3c7cc82d2c46a9ed23fccd</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_127">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Assembler\Shutdown.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Assembler\Shutdown.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>530090ddbb213c10d9c68d5b201c4eb7</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_128">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\TelemetryAsync\Linux_x64\TelemetryAsync Engine.lvlib_Process\Shutdown.vi">
+									<Version />
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\TelemetryAsync\TelemetryAsync Engine.lvlib_Process\Shutdown.vi</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>fb2ce301014f24de21a92d8a8357c791</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="user.CD.Process">
+								<BinaryString>AAAAATQbVGVsZW1ldHJ5QXN5bmMgRW5naW5lLmx2bGliFlJhbmRvbSBQcm9jZXNzLmx2Y2xhc3MAAAAAAAAAAAAAAAA=</BinaryString>
+							</Property>
+						</Properties>
+						<Errors />
+						<Channel Name="AO" TypeGUID="0e606089-0d7a-4ccf-827f-155e1ac54ed6" RowDim="1" ColDim="1" Units="" BitFields="1">
+							<Description />
+							<Properties />
+							<Errors />
+							<DefaultValue>
+								<Elem>0</Elem>
+							</DefaultValue>
+						</Channel>
+					</Section>
 				</Section>
 				<Section Name="Simulation Models" TypeGUID="03D3B937-1485-13A6-5600F2871E269F9A">
 					<Description />
