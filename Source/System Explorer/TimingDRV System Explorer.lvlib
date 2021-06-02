@@ -10,7 +10,7 @@
 	<Item Name="System Explorer" Type="Folder">
 		<Item Name="Dynamically Called" Type="Folder">
 			<Item Name="Extra Pages" Type="Folder">
-				<Item Name="AO.vi" Type="VI" URL="../AO.vi"/>
+				<Item Name="Page1.vi" Type="VI" URL="../Page1.vi"/>
 				<Item Name="Page2.vi" Type="VI" URL="../Page2.vi"/>
 				<Item Name="Page3.vi" Type="VI" URL="../Page3.vi"/>
 			</Item>
