@@ -10,7 +10,7 @@
 				<String>CDTest</String>
 			</Property>
 			<Property Name="Version">
-				<String>1.0.0.146</String>
+				<String>1.0.0.158</String>
 			</Property>
 			<Property Name="Creator">
 				<String />
@@ -55,7 +55,7 @@
 						<Boolean>false</Boolean>
 					</Property>
 					<Property Name="Engine Rate">
-						<Double>1000</Double>
+						<Double>100</Double>
 					</Property>
 					<Property Name="TL timeout">
 						<Double>120</Double>
@@ -88,7 +88,7 @@
 						<U32>0</U32>
 					</Property>
 					<Property Name="ts">
-						<U32>0</U32>
+						<U32>2</U32>
 					</Property>
 					<Property Name="Warmup Time [ms]">
 						<U32>2000</U32>
@@ -104,6 +104,9 @@
 					</Property>
 					<Property Name="Username">
 						<String>admin</String>
+					</Property>
+					<Property Name="TS_Custom_Dev_Resolved">
+						<DependentNode Path="Targets/Controller/Hardware/Chassis/Timing and Sync/TimingDRV" />
 					</Property>
 				</Properties>
 				<Errors />
@@ -1339,7 +1342,7 @@
 										<Boolean>true</Boolean>
 									</Property>
 									<Property Name="user.CD.Process">
-										<BinaryString>AAAAAS8WVGltaW5nRFJWIEVuZ2luZS5sdmxpYhZSYW5kb20gUHJvY2Vzcy5sdmNsYXNzAAAAAAAAAAAA</BinaryString>
+										<BinaryString>AAAAAS0WVGltaW5nRFJWIEVuZ2luZS5sdmxpYhRTaW5lIFByb2Nlc3MubHZjbGFzcwAAAAAAAAAAAAAA</BinaryString>
 									</Property>
 								</Properties>
 								<Errors />
