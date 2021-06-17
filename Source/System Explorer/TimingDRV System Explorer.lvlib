@@ -22,7 +22,10 @@
 			</Item>
 			<Item Name="Initialization VI.vi" Type="VI" URL="../Initialization VI.vi"/>
 		</Item>
-		<Item Name="SubVIs" Type="Folder"/>
+		<Item Name="SubVIs" Type="Folder">
+			<Item Name="Override Target Timing Source.vi" Type="VI" URL="../SubVIs/Override Target Timing Source.vi"/>
+			<Item Name="Release Target Timing Source.vi" Type="VI" URL="../SubVIs/Release Target Timing Source.vi"/>
+		</Item>
 		<Item Name="TypeDefs" Type="Folder">
 			<Item Name="Generator Types.ctl" Type="VI" URL="../TypeDefs/Generator Types.ctl"/>
 		</Item>

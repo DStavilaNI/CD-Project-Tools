@@ -1163,7 +1163,11 @@
       <Item2Launch>
         <Type>To Common Doc Dir</Type>
 		      <Path>Timing and Sync\TimingDRV\TimingDRV Configuration.llb\Main Page.vi</Path>
-      </Item2Launch>
+      </Item2Launch>  
+      <ActionVIOnDelete>
+        <Type>To Common Doc Dir</Type>
+        <Path>Timing and Sync\TimingDRV\TimingDRV Configuration.llb\ActionVIOnDelete.vi</Path>
+      </ActionVIOnDelete>
     </Page>
     
     <Page>
@@ -1215,6 +1219,14 @@
   <CustomXML>
     <Dummy/>
   </CustomXML>
+
+
+
+
+
+
+
+
 
 
 
