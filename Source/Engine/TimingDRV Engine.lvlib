@@ -27,9 +27,6 @@
 		<Item Name="Async Processes" Type="Folder">
 			<Item Name="FRTS Process.lvclass" Type="LVClass" URL="../Processes/Free Running TS/FRTS Process.lvclass"/>
 		</Item>
-		<Item Name="Tester" Type="Folder">
-			<Item Name="Tester.vi" Type="VI" URL="../Tester/Tester.vi"/>
-		</Item>
 		<Item Name="RT Driver VI.vi" Type="VI" URL="../RT Driver VI.vi"/>
 	</Item>
 	<Item Name="Types" Type="Folder"/>
