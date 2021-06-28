@@ -13,10 +13,6 @@
 			<Item Name="Process" Type="Folder">
 				<Item Name="Process.lvclass" Type="LVClass" URL="../Parent Classes/Process/Process.lvclass"/>
 			</Item>
-			<Item Name="TimerDRV" Type="Folder">
-				<Item Name="TimerDRV.lvclass" Type="LVClass" URL="../Parent Classes/TimerDRV Class/TimerDRV.lvclass"/>
-				<Item Name="TimerDRV Tester.vi" Type="VI" URL="../Parent Classes/TimerDRV Class/TimerDRV Tester.vi"/>
-			</Item>
 		</Item>
 		<Item Name="Timing Source" Type="Folder">
 			<Item Name="Timing Source.vi" Type="VI" URL="../Timing Source.vi"/>
