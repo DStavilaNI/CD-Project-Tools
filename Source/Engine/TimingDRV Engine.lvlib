@@ -22,6 +22,7 @@
 		</Item>
 		<Item Name="Async Processes" Type="Folder">
 			<Item Name="FRTS Process.lvclass" Type="LVClass" URL="../Processes/Free Running TS/FRTS Process.lvclass"/>
+			<Item Name="STS Process.lvclass" Type="LVClass" URL="../Processes/Single Stepped TS/STS Process.lvclass"/>
 		</Item>
 		<Item Name="RT Driver VI.vi" Type="VI" URL="../RT Driver VI.vi"/>
 	</Item>

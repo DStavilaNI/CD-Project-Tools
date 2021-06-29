@@ -21,6 +21,7 @@
 				<Item Name="Main Page.vi" Type="VI" URL="../Main Page.vi"/>
 			</Item>
 			<Item Name="Initialization VI.vi" Type="VI" URL="../Initialization VI.vi"/>
+			<Item Name="Step Trigger VI.vi" Type="VI" URL="../Step Trigger VI.vi"/>
 		</Item>
 		<Item Name="SubVIs" Type="Folder">
 			<Item Name="Override Target Timing Source.vi" Type="VI" URL="../SubVIs/Override Target Timing Source.vi"/>
