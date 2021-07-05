@@ -10,22 +10,25 @@
 	<Item Name="System Explorer" Type="Folder">
 		<Item Name="Dynamically Called" Type="Folder">
 			<Item Name="Extra Pages" Type="Folder">
-				<Item Name="Page1.vi" Type="VI" URL="../Page1.vi"/>
-				<Item Name="Page2.vi" Type="VI" URL="../Page2.vi"/>
-				<Item Name="Page3.vi" Type="VI" URL="../Page3.vi"/>
+				<Item Name="Page1.vi" Type="VI" URL="../Extra Pages/Page1.vi"/>
+				<Item Name="Page2.vi" Type="VI" URL="../Extra Pages/Page2.vi"/>
+				<Item Name="Page3.vi" Type="VI" URL="../Extra Pages/Page3.vi"/>
 			</Item>
 			<Item Name="Main Page" Type="Folder">
 				<Item Name="Actions" Type="Folder">
-					<Item Name="ActionVIOnDelete.vi" Type="VI" URL="../ActionVIOnDelete.vi"/>
+					<Item Name="ActionVIOnDelete.vi" Type="VI" URL="../Dyncamically Called/Main Page/Actions/ActionVIOnDelete.vi"/>
 				</Item>
-				<Item Name="Main Page.vi" Type="VI" URL="../Main Page.vi"/>
+				<Item Name="Main Page.vi" Type="VI" URL="../Dyncamically Called/Main Page/Main Page.vi"/>
 			</Item>
-			<Item Name="Initialization VI.vi" Type="VI" URL="../Initialization VI.vi"/>
-			<Item Name="Step Trigger VI.vi" Type="VI" URL="../Step Trigger VI.vi"/>
+			<Item Name="Initialization VI.vi" Type="VI" URL="../Dyncamically Called/CD Resources/Initialization VI.vi"/>
+			<Item Name="Step Trigger VI.vi" Type="VI" URL="../Dyncamically Called/CD Resources/Step Trigger VI.vi"/>
 		</Item>
 		<Item Name="SubVIs" Type="Folder">
+			<Item Name="Close TCP Connection.vi" Type="VI" URL="../SubVIs/Close TCP Connection.vi"/>
+			<Item Name="Open TCP Connection.vi" Type="VI" URL="../SubVIs/Open TCP Connection.vi"/>
 			<Item Name="Override Target Timing Source.vi" Type="VI" URL="../SubVIs/Override Target Timing Source.vi"/>
 			<Item Name="Release Target Timing Source.vi" Type="VI" URL="../SubVIs/Release Target Timing Source.vi"/>
+			<Item Name="Write TCP Message.vi" Type="VI" URL="../SubVIs/Write TCP Message.vi"/>
 		</Item>
 		<Item Name="TypeDefs" Type="Folder">
 			<Item Name="Generator Types.ctl" Type="VI" URL="../TypeDefs/Generator Types.ctl"/>
