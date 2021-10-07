@@ -816,6 +816,10 @@
         <Type>To Common Doc Dir</Type>
         <Path>Timing and Sync\TimingDRV\TimingDRV Configuration.llb\ActionVIOnDelete.vi</Path>
       </ActionVIOnDelete>
+	    <ActionVIOnCompile>
+        <Type>To Common Doc Dir</Type>
+        <Path>Timing and Sync\TimingDRV\TimingDRV Configuration.llb\ActionVIOnCompile.vi</Path>
+      </ActionVIOnCompile>
     </Page>
     
     <Page>
@@ -867,6 +871,25 @@
   <CustomXML>
     <Dummy/>
   </CustomXML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
