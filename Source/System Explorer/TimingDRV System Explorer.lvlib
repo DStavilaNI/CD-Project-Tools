@@ -29,10 +29,14 @@
 			<Item Name="Close TCP Connection.vi" Type="VI" URL="../SubVIs/Close TCP Connection.vi"/>
 			<Item Name="Get Operating Mode.vi" Type="VI" URL="../SubVIs/Get Operating Mode.vi"/>
 			<Item Name="Get Target IP Address.vi" Type="VI" URL="../SubVIs/Get Target IP Address.vi"/>
+			<Item Name="Get Target IP Address2.vi" Type="VI" URL="../SubVIs/Get Target IP Address2.vi"/>
+			<Item Name="Get Target Node.vi" Type="VI" URL="../SubVIs/Get Target Node.vi"/>
 			<Item Name="Launch Step Trigger VI.vi" Type="VI" URL="../SubVIs/Launch Step Trigger VI.vi"/>
+			<Item Name="Node Ptr to BaseNode.vi" Type="VI" URL="../SubVIs/Node Ptr to BaseNode.vi"/>
 			<Item Name="Open TCP Connection.vi" Type="VI" URL="../SubVIs/Open TCP Connection.vi"/>
 			<Item Name="Override Target Timing Source.vi" Type="VI" URL="../SubVIs/Override Target Timing Source.vi"/>
 			<Item Name="Release Target Timing Source.vi" Type="VI" URL="../SubVIs/Release Target Timing Source.vi"/>
+			<Item Name="Set Engine Rate.vi" Type="VI" URL="../SubVIs/Set Engine Rate.vi"/>
 			<Item Name="Set Operating Mode.vi" Type="VI" URL="../SubVIs/Set Operating Mode.vi"/>
 			<Item Name="Stop Step Trigger VI.vi" Type="VI" URL="../SubVIs/Stop Step Trigger VI.vi"/>
 			<Item Name="Write TCP Message.vi" Type="VI" URL="../SubVIs/Write TCP Message.vi"/>
